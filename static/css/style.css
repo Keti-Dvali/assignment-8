@@ -14,6 +14,13 @@ a{
     text-decoration: none;
     color: inherit;
 }
+header{
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1;
+    background-color: #FFFFFF;
+}
 .container{
     max-width: 1155px;
     width: 100%;
@@ -22,7 +29,6 @@ a{
     display: flex;
     justify-content: center;
     align-items: center;
-    /* position: fixed; */
 }
 .nav-link-1{
     display: flex;
@@ -93,7 +99,8 @@ a{
     display: flex;
     justify-content: center;
     gap: 28px;
-    margin-top: 38px;
+    margin: 38px 0px 40px 0px;
+
 }
 .nav-2 ul li{
     font-size: 24px;
@@ -108,7 +115,7 @@ a{
 }
 .right-border{
     border-right: 1px solid #400404;
-    width: 50px;
+    width: 60px;
     margin-left: 28px;
 }
 
@@ -121,6 +128,7 @@ a{
     height: 826px;
 }
 .section-1{
+    margin-top: 132px;
     margin-left: 90px;
     display: flex;
 }
@@ -167,18 +175,16 @@ a{
 
 }
 .coffee :nth-child(2){
-    width: 260px;
     height: 440px;
-    top: 18px;
-    left: 195px;
+    top: 33px;
+    left: 150px;
     position: absolute;
 }
 .coffee :nth-child(3){
-    width: 187.17px;
     height: 316.74px;
     position: absolute;
-    top: 179px;
-    left: 411px;
+    top: 175px;
+    left: 372px;
 }
 .coffee :nth-child(4){
     position: absolute;
@@ -253,7 +259,7 @@ a{
     max-width: 1155px;
     width: 90%;
     margin: 0 auto;
-    margin-top: 87px;
+    margin-top: 280px;
     margin-bottom: 192px;
     height: 1337px;
     display: grid;
@@ -298,7 +304,7 @@ a{
     max-width: 1155px;
     width: 90%;
     margin: 0 auto;
-    margin-top: 87px;
+    margin-top: 280px;
     margin-bottom: 192px;
     height: 983px;
     display: grid;
@@ -309,7 +315,7 @@ a{
 }
 /* location-body */
 .location-title{
-    margin: 76px 0px 109px 584px;
+    margin: 200px 0px 109px 584px;
     font-size: 28px;
     font-weight: bold;
     color: #05520D;
@@ -365,7 +371,7 @@ a{
     width: 90%;
     margin: 0 auto;
     height: 1846px;
-    margin-top: 125px;
+    margin-top: 200px;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(3, 1fr);
@@ -394,6 +400,7 @@ a{
 .contact-title{
     display: grid;
     grid-template-columns: 1fr;
+    margin-top: 150px;
 }
 .contact-title :nth-child(1){
     justify-self: center;
@@ -503,8 +510,11 @@ a{
     font-size: 17px;
     font-weight: bold;
 }
-
-
+.contact-container-2 img:hover{
+    transform: scale(1.1);
+    transition-duration: 0.3s;
+    cursor: pointer;
+}
 
 /* footer */
 
@@ -546,11 +556,10 @@ footer{
     margin-top: 30px;
     color:#863503;
     font-size: 21.2px;
-    
+    cursor: pointer;  
 }
 .email{
     text-decoration-line: underline;
-    cursor: pointer;
 }
 .text-us{
     font-weight: bold;
